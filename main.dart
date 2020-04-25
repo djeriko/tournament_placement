@@ -1,12 +1,36 @@
+import 'dart:collection';
+
 import 'results.dart';
 
 void main() {
-  Map<String, List<int>> temp1 = placeCounter(random_24_04);
-  Map<String, List<int>> temp2 = placeCounter(random_23_04);
-  Map<String, List<int>> merged = mergeMaps(temp1, temp2);
+  List<Map<int, List<String>>> randoms = [
+    random_10_04,
+    random_11_04,
+    random_12_04,
+    random_13_04,
+    random_14_04,
+    random_15_04,
+    random_18_04,
+    random_19_04,
+    random_22_04,
+    random_23_04,
+    random_24_04
+  ];
 
-  for (String key in merged.keys) {
-    print("$key :" + " ${merged[key]}");
+  Map<String, List<int>> tempMain = {};
+
+  for (Map<int, List<String>> element in randoms) {
+    tempMain = mergeMaps(tempMain, placeCounter(element));
+  }
+
+  LinkedHashMap scores = scoreCounter(tempMain);
+
+  for (String key in tempMain.keys) {
+    print("$key :" + " ${tempMain[key]}");
+  }
+
+  for (String key in scores.keys) {
+    print("$key :" + " ${scores[key]}");
   }
 }
 
@@ -51,4 +75,21 @@ Map<String, List<int>> mergeMaps(
     }
   }
   return firstMap;
+}
+
+LinkedHashMap scoreCounter(Map<String, List<int>> values) {
+  Map<String, int> result = {};
+  for (String key in values.keys) {
+    int counter = 0;
+    for (int i = 0; i < 10; i++) {
+      counter = counter + (3 - i) * values[key][i];
+    }
+    result.addAll({key: counter});
+  }
+  var sortedKeys = result.keys.toList(growable: false)
+    ..sort((k1, k2) => result[k1].compareTo(result[k2]));
+  LinkedHashMap sortedMap = new LinkedHashMap.fromIterable(sortedKeys,
+      key: (k) => k, value: (k) => result[k]);
+
+  return sortedMap;
 }

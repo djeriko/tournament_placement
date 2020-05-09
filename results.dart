@@ -1,3 +1,59 @@
+// Map<int, List<String>> random_03_05 = {
+//   1: [""]
+// };
+
+Map<int, List<String>> mix_02_05 = {
+  1: ["duke", "shaddo", "buuren", "second", "9k"],
+  2: ["hikari", "rave", "elem", "pfg", "shumer"],
+  3: ["jeriko", "tekashi", "keen", "cara_delevin", "qx"],
+  4: ["jk", "nezloba", "yaku", "lacalut", "reblast"],
+  5: ["hack", "dejavu", "sudden", "osavi", "eavest"],
+  6: ["blazebite", "finna", "vasya", "vitek", "chloe"],
+  7: ["diq2s", "lukas", "sanya", "foqd", "zaza"],
+  8: ["kuraj", "mth", "marshmellow", "wyd", "vld"],
+  9: ["sora", "dred", "xploid", "togu", "sosik"],
+  10: ["efef", "warasar", "deadstar", "sth", "stair"],
+  11: ["fullmetal", "brz", "plex", "hoshi", "knohlead"],
+  12: ["madjahet", "vova3b", "scooby", "dh", "luna"],
+  13: ["bdk", "heso", "mirsser", "19_17_17_111", "negrofan"]
+};
+
+Map<int, List<String>> random_28_04 = {
+  1: ["scooby", "kuraj", "finna", "cara_delevin", "second"],
+  2: ["jeriko", "hikari", "keen", "yaku", "vld"],
+  3: ["diq2s", "sora", "rave", "hellmuth", "kenchery"],
+  4: ["plex", "tekashi", "solork", "reblast", "solist"]
+};
+
+Map<int, List<String>> random_27_04 = {
+  1: ["9k", "shaddo", "dejavu", "marshmellow", "tmn"],
+  2: ["kenchery", "hack", "sudden", "keen", "heso"],
+  3: ["reblast", "fullmetal", "cara_delevinge", "raigo", "yaku"],
+  4: ["foqd", "plex", "efef", "rave", "bdk"],
+  5: ["sth", "finna", "dred", "deadstar", "lil"],
+  6: ["alamai", "kuraj", "negrofan", "japan_ghoul"]
+};
+
+Map<int, List<String>> big_random_26_04 = {
+  1: ["blazebite", "dred", "bdk", "heso", "tmn"],
+  2: ["vasya", "rave", "nezloba", "blast", "eavest"],
+  3: ["kuraj", "buuren", "elem", "9k", "kenchery"],
+  4: ["jeriko", "hellscream", "michilnoob", "beat", "jerve"],
+  5: ["plex", "cara_delevin", "paradisescream", "hoshi", "qinee"],
+  6: ["scooby", "finna", "keen", "negrofan", "vld"],
+  7: ["marshmellow", "pfg", "deadstar", "yaku", "second"],
+  8: ["diq2s", "liquid_miracle", "knohlead", "vitek", "alamai"],
+  9: ["sora", "mssln761", "hellmuth", "sosik", "truhukkunuhul"],
+  10: ["dejavu", "sanya", "togu", "sth", "mirsser"]
+};
+
+Map<int, List<String>> random_25_04 ={
+  1: ["efef", "hikari", "scooby", "sosik", "kenchery"],
+  2: ["diq2s", "tekashi", "dh", "fantazmelzzz", "negrofan"],
+  3: ["shaddo", "finna", "keen", "reblast", "alamai"],
+  4: ["plex", "cara_delevin", "9k", "luna", "gunter"]
+};
+
 Map<int, List<String>> random_24_04 = {
   1: ["efef", "hikari", "scooby", "sosik-bitch", "kenchery"],
   2: ["diq2s", "tekashi", "dh", "fantazmelzz", "egrofan"],
